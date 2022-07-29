@@ -1,0 +1,417 @@
+/* ======================================
+              Crud
+======================================= */
+
+
+/* * {
+  border: 1px solid red;
+} */
+
+.scdBtn {
+  text-decoration: none;
+  padding: .8em;
+  border-radius: 8px;
+}
+
+.scdBtn:hover {
+  text-decoration: none;
+}
+
+
+.liteTextBG {
+  background-color: rgba(189, 189, 189, 0.3);
+  border-radius: 6px;
+}
+.textBG {
+  background-color: rgba(189, 189, 189, 0.7);
+}
+
+
+.grow { transition: all .4s ease-in-out; }
+.grow:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+  color: ;
+  box-shadow: 5px 8px 13px 2px #000000;
+}
+
+
+.carouselImg0 { background-image: url('/assets/img/filmbg-min.jpg');}
+.carouselImg1 { background-image: url('/assets/img/scdCarousel1-min.jpg');}
+.carouselImg2 { background-image: url('/assets/img/stockImg-min.jpg');}
+
+.projectTop { background-image: url('/assets/img/projectTop0-min.jpg');}
+
+.projectImg0 { background-image: url('/assets/img/archbrookCardBG-min.jpg');}
+.projectImgBlur0 { background-image: url('/assets/img/archbrookCardBGBlur-min.jpg');}
+
+.projectImg1 { background-image: url('/assets/img/onTheFly-min.jpg');}
+.projectImgBlur1 { background-image: url('/assets/img/onTheFlyBlur-min.jpg');}
+
+.projectImg2 { background-image: url('/assets/img/vertIncCardBG-min.jpg');}
+.projectImgBlur2 { background-image: url('/assets/img/vertIncCardBlur-min.jpg');}
+
+
+
+
+.projectImg3 { background-image: url('/assets/img/hoCardBG-min.jpg');}
+.projectImgBlur3 { background-image: url('/assets/img/hoCardBlur-min.jpg');}
+
+.projectImg4 { background-image: url('/assets/img/skiPastCard-min.jpg');}
+.projectImgBlur4 { background-image: url('/assets/img/sikiPastCardBlur-min.jpg');}
+
+.projectImg5 { background-image: url('/assets/img/testBG-min.jpg');}
+.projectImgBlur5 { background-image: url('/assets/img/testbgblur-min.jpg');}
+
+.ourTeamTop { background-image: url('/assets/img/ourTeamTop-min.jpg'); }
+.csuiteOcean { background-image: url('/assets/img/csuiteOcean-min.jpg'); }
+.ourTeamceo { background-image: url('/assets/img/ceoProfile-min.jpg'); }
+.ourTeamcfo { background-image: url('/assets/img/cfoProfile-min.jpg'); }
+.ourTeamcoo { background-image: url('/assets/img/cooProfile-min.jpg'); }
+.ourTeamcio { background-image: url('/assets/img/cioProfile-min.jpg'); }
+
+.ourTeamDesign { background-image: url('/assets/img/designTeam-min.jpg');}
+.ourTeamDesignBlur { background-image: url('/assets/img/designTeam-min.jpg');}
+
+.ourTeamMarketing { background-image: url('/assets/img/marketingTeam-min.jpg');}
+.ourTeamMarketingBlur { background-image: url('/assets/img/marketingTeam-min.jpg');}
+
+.ourTeamTech { background-image: url('/assets/img/techTeam-min.jpg');}
+.ourTeamTechBlur { background-image: url('/assets/img/techTeam-min.jpg');}
+
+.ourTeamSocial { background-image: url('/assets/img/socialTeam-min.jpg');}
+.ourTeamSocialBlur { background-image: url('/assets/img/socialTeam-min.jpg');}
+
+.imageSet {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* ======================================
+              Footer
+======================================= */
+
+
+
+
+
+
+
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+
+/* ======================================
+              CAROUSEL
+======================================= */
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+
+
+
+/* ======================================
+              NAV
+======================================= */
+
+
+
+/*-------------Reset-------------*/
+ .navButton {
+	 background: none;
+	 box-shadow: none;
+	 border: none;
+	 cursor: pointer;
+}
+ .navButton:focus, .navButton:focus {
+	 outline: 0;
+}
+ html {
+	 scroll-behavior: smooth;
+}
+/*-------------Layout-------------*/
+ body {
+	 line-height: 1.5em;
+	 padding: 0;
+	 margin: 0;
+}
+
+/*-------------Helpers-------------*/
+ .skew {
+	 transform: skew(-20deg);
+}
+ .un-skew {
+	 transform: skew(20deg);
+}
+/*-------------Nav-------------*/
+ #nav-wrapper {
+	 overflow: hidden;
+	 width: 100%;
+	 margin: 0 auto;
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 z-index: 100;
+}
+ #nav {
+	 background-color: #fff;
+	 box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+	 display: flex;
+	 flex-direction: column;
+	 font-family: &#34;
+	Saira Semi Condensed&#34;
+	, sans-serif;
+	 height: 4em;
+	 overflow: hidden;
+}
+ #nav.nav-visible {
+	 height: 100%;
+	 overflow: auto;
+}
+ .nav {
+	 display: flex;
+	 height: 4em;
+	 line-height: 4em;
+	 flex-grow: 1;
+}
+ .nav-link, .logo {
+	 padding: 0 1em;
+}
+ span.gradient {
+	 background: #f857a8;
+	 background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
+	 background: linear-gradient(45deg, #f857a8, #ff5858);
+	 padding: 0 1em;
+	 position: relative;
+	 right: 1em;
+	 margin-right: auto;
+}
+ span.gradient:hover {
+	 animation-name: logo-hover;
+	 animation-duration: 0.3s;
+	 animation-fill-mode: forwards;
+	 animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
+}
+ h1.logo {
+	 font-weight: 300;
+	 font-size: 1.75em;
+	 line-height: 0.75em;
+	 color: #fff;
+}
+ h1.logoa, a:active, a:hover, a:visited {
+	 text-decoration: none;
+	 color: #fff;
+}
+ .nav-link {
+	 text-transform: uppercase;
+	 text-align: center;
+	 border-top: 0.5px solid #ddd;
+}
+ a:link, a:visited, a:active {
+	 text-decoration: none;
+	 color: black;
+}
+ a:hover {
+	 text-decoration: underline;
+}
+
+ .btn-nav {
+	 color: black;
+	 padding-left: 2em;
+	 padding-right: 2em;
+}
+ @media (min-width: 800px) {
+	 #nav-wrapper {
+		 overflow: hidden;
+	}
+	 #nav {
+		 overflow: hidden;
+		 flex-direction: row;
+	}
+	 .nav-link {
+		 border-top: none;
+	}
+	 .rightNav {
+		 overflow: hidden;
+		 flex-direction: row;
+		 justify-content: flex-end;
+		 position: relative;
+		 height: auto;
+	}
+
+	 .btn-nav {
+		 display: none;
+	}
+	 .nava:link.active, a:visited.active, a:active.active {
+		 background: grey;
+		 color: #fff;
+	}
+	 .nav-link-span {
+		 transform: skew(20deg);
+		 display: inline-block;
+	}
+	 .nav-link {
+		 transform: skew(-20deg);
+		 color: #777;
+		 text-decoration: none;
+	}
+	 .nav-link:last-child {
+		 padding-right: 3em;
+	}
+	 a:hover.nav-link:not(.active) {
+		 color: #444;
+		 background: #ddd;
+		 background: linear-gradient(45deg, #fff, #ddd);
+	}
+}
+ @keyframes logo-hover {
+	 20% {
+		 padding-right: 0em;
+	}
+	 100% {
+		 padding-right: 5em;
+	}
+}
